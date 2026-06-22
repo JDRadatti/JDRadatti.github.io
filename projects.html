@@ -1,0 +1,99 @@
+<!doctype html>
+<html lang="en" class="wa-theme-default">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Projects — Justin Radatti</title>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@awesome.me/webawesome@3.9.0/dist-cdn/styles/themes/default.css" />
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@awesome.me/webawesome@3.9.0/dist-cdn/styles/webawesome.css" />
+  <script type="module" src="https://cdn.jsdelivr.net/npm/@awesome.me/webawesome@3.9.0/dist-cdn/webawesome.loader.js"></script>
+  <style>
+    html,body{min-height:100%;padding:0;margin:0}
+    wa-page:not(:defined){visibility:hidden}
+    [slot="navigation-header"]{border-block-end:var(--wa-border-width-s) var(--wa-border-style) var(--wa-color-surface-border)}
+    [slot="navigation-footer"]{border-block-start:var(--wa-border-width-s) var(--wa-border-style) var(--wa-color-surface-border)}
+    wa-page[view="desktop"] [slot*="navigation"]{border-inline-end:var(--wa-border-width-s) var(--wa-border-style) var(--wa-color-surface-border)}
+  </style>
+</head>
+<body>
+  <wa-page>
+    <nav slot="navigation-header">
+      <div class="wa-flank">
+        <wa-avatar image="" label="" shape="circle"></wa-avatar>
+        <div class="wa-stack wa-gap-3xs">
+          <span class="wa-heading-m">Justin Radatti</span>
+        </div>
+      </div>
+    </nav>
+
+    <nav slot="navigation">
+      <a href="./index.html">About</a>
+      <a href="./education.html">Education</a>
+      <a href="./experience.html">Experience</a>
+      <a href="./projects.html" aria-current="page">Projects</a>
+    </nav>
+
+    <nav slot="navigation-footer">
+      <a href="mailto:jdradatti@gmail.com" class="wa-flank">
+        <wa-icon name="at"></wa-icon>
+        <span>Email</span>
+      </a>
+      <a href="https://linkedin.com/in/jdradatti" class="wa-flank">
+        <wa-icon name="square-linkedin" family="brands"></wa-icon>
+        <span>LinkedIn</span>
+      </a>
+      <a href="https://github.com/JDRadatti" class="wa-flank">
+        <wa-icon name="square-github" family="brands"></wa-icon>
+        <span>GitHub</span>
+      </a>
+    </nav>
+
+    <main>
+      <section>
+        <h2>Projects</h2>
+
+        <wa-card>
+          <div slot="header"><strong>CGRA4ML</strong></div>
+          <p>Developed custom Linux kernel drivers and user-space applications to enable seamless hardware acceleration and runtime execution for the CGRA4ML framework.</p>
+          <a href="https://github.com/JDRadatti">GitHub</a>
+        </wa-card>
+
+        <wa-card>
+          <div slot="header"><strong>ML Research — N:M Sparsity</strong></div>
+          <p>Researched novel N:M sparsity techniques for training multi-mode sparsity models and gating techniques for choosing the most efficient mode during inference for Professor Orailoglu.</p>
+          <a href="https://github.com/JDRadatti">GitHub</a>
+        </wa-card>
+
+        <wa-card>
+          <div slot="header"><strong>Conductor</strong></div>
+          <p>Demonstrated agile leadership by directing a 13-student engineering team to design, containerize, and deliver a full-stack class management application.</p>
+          <a href="https://github.com/JDRadatti">GitHub</a>
+        </wa-card>
+
+        <wa-card>
+          <div slot="header"><strong>FPGA — Vitis HLS IP Cores</strong></div>
+          <p>Designed and optimized high-performance IP cores in Vitis HLS targeting Zynq FPGA using loop unrolling, pipelining, and memory partitioning.</p>
+        </wa-card>
+
+        <wa-card>
+          <div slot="header"><strong>CSS Reset</strong></div>
+          <p>Designed and implemented a CSS Reset for semantic HTML. Used on the Deschutes Public Library Foundation website and the showcase website.</p>
+          <a href="https://github.com/JDRadatti">GitHub</a>
+        </wa-card>
+
+        <wa-card>
+          <div slot="header"><strong>Chess</strong></div>
+          <p>Programmed a full-stack multi-player chess website using GoLang, Vue, and Docker.</p>
+          <a href="https://github.com/JDRadatti">GitHub</a>
+        </wa-card>
+
+        <wa-card>
+          <div slot="header"><strong>Simulated 8086 CPU</strong></div>
+          <p>Implemented an 8086 CPU that supports decoding and executing 16-bit instructions (In progress).</p>
+          <a href="https://github.com/JDRadatti">GitHub</a>
+        </wa-card>
+      </section>
+    </main>
+  </wa-page>
+</body>
+</html>

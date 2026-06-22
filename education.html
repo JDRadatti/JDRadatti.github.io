@@ -1,0 +1,106 @@
+<!doctype html>
+<html lang="en" class="wa-theme-default">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Education — Justin Radatti</title>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@awesome.me/webawesome@3.9.0/dist-cdn/styles/themes/default.css" />
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@awesome.me/webawesome@3.9.0/dist-cdn/styles/webawesome.css" />
+  <script type="module" src="https://cdn.jsdelivr.net/npm/@awesome.me/webawesome@3.9.0/dist-cdn/webawesome.loader.js"></script>
+  <style>
+    html,body{min-height:100%;padding:0;margin:0}
+    wa-page:not(:defined){visibility:hidden}
+    [slot="navigation-header"]{border-block-end:var(--wa-border-width-s) var(--wa-border-style) var(--wa-color-surface-border)}
+    [slot="navigation-footer"]{border-block-start:var(--wa-border-width-s) var(--wa-border-style) var(--wa-color-surface-border)}
+    wa-page[view="desktop"] [slot*="navigation"]{border-inline-end:var(--wa-border-width-s) var(--wa-border-style) var(--wa-color-surface-border)}
+  </style>
+</head>
+<body>
+  <wa-page>
+    <nav slot="navigation-header">
+      <div class="wa-flank">
+        <wa-avatar image="" label="" shape="circle"></wa-avatar>
+        <div class="wa-stack wa-gap-3xs">
+          <span class="wa-heading-m">Justin Radatti</span>
+        </div>
+      </div>
+    </nav>
+
+    <nav slot="navigation">
+      <a href="./index.html">About</a>
+      <a href="./education.html" aria-current="page">Education</a>
+      <a href="./experience.html">Experience</a>
+      <a href="./projects.html">Projects</a>
+    </nav>
+
+    <nav slot="navigation-footer">
+      <a href="mailto:jdradatti@gmail.com" class="wa-flank">
+        <wa-icon name="at"></wa-icon>
+        <span>Email</span>
+      </a>
+      <a href="https://linkedin.com/in/jdradatti" class="wa-flank">
+        <wa-icon name="square-linkedin" family="brands"></wa-icon>
+        <span>LinkedIn</span>
+      </a>
+      <a href="https://github.com/JDRadatti" class="wa-flank">
+        <wa-icon name="square-github" family="brands"></wa-icon>
+        <span>GitHub</span>
+      </a>
+    </nav>
+
+    <main>
+      <section>
+        <h2>Education</h2>
+
+        <article>
+          <h3>University of California, San Diego</h3>
+          <p>M.S. Computer Science and Engineering, Computer Engineering</p>
+          <p><time datetime="2025-09">Sep 2025</time> – Present</p>
+        </article>
+
+        <article>
+          <h3>University of California, Berkeley</h3>
+          <p>B.A. Computer Science</p>
+          <p><time datetime="2018-08">Aug 2018</time> – <time datetime="2022-05">May 2022</time></p>
+        </article>
+      </section>
+
+      <section>
+        <h2>Technical Skills</h2>
+
+        <section>
+          <h3>Languages</h3>
+          <ul>
+            <li>Rust</li>
+            <li>C/C++</li>
+            <li>Python</li>
+            <li>Go</li>
+            <li>JavaScript</li>
+            <li>HTML/CSS</li>
+          </ul>
+        </section>
+
+        <section>
+          <h3>Tools / Libraries</h3>
+          <ul>
+            <li>Docker</li>
+            <li>NGINX</li>
+            <li>PyTorch</li>
+            <li>AWS</li>
+          </ul>
+        </section>
+
+        <section>
+          <h3>Courses</h3>
+          <ul>
+            <li>Software Engineering</li>
+            <li>Embedded Systems</li>
+            <li>Computer Architecture</li>
+            <li>Compilers</li>
+          </ul>
+        </section>
+      </section>
+    </main>
+  </wa-page>
+</body>
+</html>
