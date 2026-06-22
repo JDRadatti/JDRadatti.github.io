@@ -11,7 +11,8 @@
     html,body{min-height:100%;padding:0;margin:0}
     wa-page:not(:defined){visibility:hidden}
     [slot="navigation-header"]{border-block-end:var(--wa-border-width-s) var(--wa-border-style) var(--wa-color-surface-border)}
-    [slot="navigation-footer"]{border-block-start:var(--wa-border-width-s) var(--wa-border-style) var(--wa-color-surface-border)}
+    [slot="navigation-footer"]{flex-direction:row;justify-content:center;border-block-start:var(--wa-border-width-s) var(--wa-border-style) var(--wa-color-surface-border)}
+    [slot="navigation-footer"] wa-icon{font-size:var(--wa-font-size-2xl)}
     wa-page[view="desktop"] [slot*="navigation"]{border-inline-end:var(--wa-border-width-s) var(--wa-border-style) var(--wa-color-surface-border)}
   </style>
 </head>
@@ -34,17 +35,14 @@
     </nav>
 
     <nav slot="navigation-footer">
-      <a href="mailto:jdradatti@gmail.com" class="wa-flank">
+      <a href="mailto:jdradatti@gmail.com" aria-label="Email">
         <wa-icon name="at"></wa-icon>
-        <span>Email</span>
       </a>
-      <a href="https://linkedin.com/in/jdradatti" class="wa-flank">
+      <a href="https://linkedin.com/in/jdradatti" aria-label="LinkedIn">
         <wa-icon name="square-linkedin" family="brands"></wa-icon>
-        <span>LinkedIn</span>
       </a>
-      <a href="https://github.com/JDRadatti" class="wa-flank">
+      <a href="https://github.com/JDRadatti" aria-label="GitHub">
         <wa-icon name="square-github" family="brands"></wa-icon>
-        <span>GitHub</span>
       </a>
     </nav>
 
