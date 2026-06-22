@@ -16,6 +16,8 @@
     [slot="navigation-footer"]{flex-direction:row;justify-content:center;border-block-start:var(--wa-border-width-s) var(--wa-border-style) var(--wa-color-surface-border)}
     [slot="navigation-footer"] wa-icon{font-size:var(--wa-font-size-xl)}
     wa-page[view="desktop"] [slot*="navigation"]{border-inline-end:var(--wa-border-width-s) var(--wa-border-style) var(--wa-color-surface-border)}
+    wa-page{--aside-width:25ch}
+    wa-page::part(aside){border-inline-start:var(--wa-border-width-s) var(--wa-border-style) var(--wa-color-surface-border)}
   </style>
 </head>
 <body>
@@ -29,7 +31,6 @@
 
     <nav slot="navigation">
       <a href="./index.html" aria-current="page">About</a>
-      <a href="./education.html">Education</a>
       <a href="./experience.html">Experience</a>
       <a href="./projects.html">Projects</a>
     </nav>
@@ -47,50 +48,61 @@
     </nav>
 
     <main>
-      <h1>Justin Radatti</h1>
-      <p><a href="mailto:jdradatti@gmail.com">jdradatti@gmail.com</a> — (541) 848.8603 — San Diego, CA — <a href="https://www.linkedin.com/in/justin-radatti-000/">LinkedIn</a> — <a href="https://github.com/JDRadatti">GitHub</a></p>
-
       <section>
         <h2>About</h2>
         <p>Software engineer with experience across the full stack, from low-level kernel drivers and FPGA design to distributed data pipelines and web applications. Currently pursuing an M.S. in Computer Science &amp; Engineering at UC San Diego, with a B.A. in Computer Science from UC Berkeley.</p>
       </section>
 
       <section>
-        <h2>Technical Skills</h2>
+        <h2>Education</h2>
 
-        <section>
-          <h3>Languages</h3>
-          <ul>
-            <li>Rust</li>
-            <li>C/C++</li>
-            <li>Python</li>
-            <li>Go</li>
-            <li>JavaScript</li>
-            <li>HTML/CSS</li>
-          </ul>
-        </section>
+        <article>
+          <h3>University of California, San Diego</h3>
+          <p>M.S. Computer Science and Engineering, Computer Engineering</p>
+          <p><time datetime="2025-09">Sep 2025</time> – Present</p>
+        </article>
 
-        <section>
-          <h3>Tools / Libraries</h3>
-          <ul>
-            <li>Docker</li>
-            <li>NGINX</li>
-            <li>PyTorch</li>
-            <li>AWS</li>
-          </ul>
-        </section>
-
-        <section>
-          <h3>Courses</h3>
-          <ul>
-            <li>Software Engineering</li>
-            <li>Embedded Systems</li>
-            <li>Computer Architecture</li>
-            <li>Compilers</li>
-          </ul>
-        </section>
+        <article>
+          <h3>University of California, Berkeley</h3>
+          <p>B.A. Computer Science</p>
+          <p><time datetime="2018-08">Aug 2018</time> – <time datetime="2022-05">May 2022</time></p>
+        </article>
       </section>
     </main>
+
+    <section slot="aside">
+      <section>
+        <h3>Languages</h3>
+        <div class="wa-flex" style="gap:var(--wa-space-s);flex-wrap:wrap">
+          <wa-badge variant="brand">Rust</wa-badge>
+          <wa-badge variant="brand">C/C++</wa-badge>
+          <wa-badge variant="brand">Python</wa-badge>
+          <wa-badge variant="brand">Go</wa-badge>
+          <wa-badge variant="brand">JavaScript</wa-badge>
+          <wa-badge variant="brand">HTML/CSS</wa-badge>
+        </div>
+      </section>
+
+      <section>
+        <h3>Tools / Libraries</h3>
+        <div class="wa-flex" style="gap:var(--wa-space-s);flex-wrap:wrap">
+          <wa-badge variant="success">Docker</wa-badge>
+          <wa-badge variant="success">NGINX</wa-badge>
+          <wa-badge variant="success">PyTorch</wa-badge>
+          <wa-badge variant="success">AWS</wa-badge>
+        </div>
+      </section>
+
+      <section>
+        <h3>Courses</h3>
+        <div class="wa-flex" style="gap:var(--wa-space-s);flex-wrap:wrap">
+          <wa-badge variant="info">Software Engineering</wa-badge>
+          <wa-badge variant="info">Embedded Systems</wa-badge>
+          <wa-badge variant="info">Computer Architecture</wa-badge>
+          <wa-badge variant="info">Compilers</wa-badge>
+        </div>
+      </section>
+    </section>
   </wa-page>
 </body>
 </html>
