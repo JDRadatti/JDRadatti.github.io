@@ -18,6 +18,8 @@
     wa-page[view="desktop"] [slot*="navigation"]{border-inline-end:var(--wa-border-width-s) var(--wa-border-style) var(--wa-color-surface-border)}
     section{display:grid;grid-template-columns:repeat(auto-fill,minmax(30ch,1fr));gap:var(--wa-space-m);}
     section wa-card{height:100%}
+    [slot="header-actions"] a{display:flex}
+    [slot="header-actions"] wa-icon{font-size:var(--wa-font-size-lg);width:1em;height:1em}
     section h2{grid-column:1/-1}
   </style>
 </head>
@@ -45,7 +47,7 @@
         <wa-icon name="square-linkedin" family="brands"></wa-icon>
       </a>
       <a href="https://github.com/JDRadatti" aria-label="GitHub">
-        <wa-icon name="square-github" family="brands"></wa-icon>
+        <wa-icon name="external-link" family="solid"></wa-icon>
       </a>
     </nav>
 
@@ -56,19 +58,19 @@
         <wa-card>
           <div slot="header"><strong>CGRA4ML</strong></div>
           <p>Developed custom Linux kernel drivers and user-space applications to enable seamless hardware acceleration and runtime execution for the CGRA4ML framework.</p>
-          <a href="https://github.com/JDRadatti/cgra4ml">GitHub</a>
+          <a href="https://github.com/JDRadatti/cgra4ml" slot="header-actions" aria-label="GitHub"><wa-icon name="external-link" family="solid"></wa-icon></a>
         </wa-card>
 
         <wa-card>
-          <div slot="header"><strong>ML Research — Superimposed Sparsity</strong></div>
+          <div slot="header"><strong>ML Research</strong></div>
           <p>Researched novel N:M sparsity techniques for training multi-mode sparsity models and gating techniques for choosing the most efficient mode during inference for Professor Orailoglu.</p>
-          <a href="https://github.com/JDRadatti/supaerimposed_sparsity">GitHub</a>
+          <a href="https://github.com/JDRadatti/supaerimposed_sparsity" slot="header-actions" aria-label="GitHub"><wa-icon name="external-link" family="solid"></wa-icon></a>
         </wa-card>
 
         <wa-card>
           <div slot="header"><strong>Conductor</strong></div>
           <p>Demonstrated agile leadership by directing a 13-student engineering team to design, containerize, and deliver a full-stack class management application.</p>
-          <a href="https://github.com/CSE210-FA25-Team05/cse-210-conductor-app">GitHub</a>
+          <a href="https://github.com/CSE210-FA25-Team05/cse-210-conductor-app" slot="header-actions" aria-label="GitHub"><wa-icon name="external-link" family="solid"></wa-icon></a>
         </wa-card>
 
         <wa-card>
@@ -79,19 +81,19 @@
         <wa-card>
           <div slot="header"><strong>CSS Reset</strong></div>
           <p>Designed and implemented a CSS Reset for semantic HTML. Used on the Deschutes Public Library Foundation website and the showcase website.</p>
-          <a href="https://main.d3qz4ocyf7g8uf.amplifyapp.com/">GitHub</a>
+          <a href="https://main.d3qz4ocyf7g8uf.amplifyapp.com/" slot="header-actions" aria-label="Website"><wa-icon name="external-link" family="solid"></wa-icon></a>
         </wa-card>
 
         <wa-card>
           <div slot="header"><strong>Chess</strong></div>
           <p>Programmed a full-stack multi-player chess website using GoLang, Vue, and Docker.</p>
-          <a href="https://github.com/JDRadatti/go-chess">GitHub</a>
+          <a href="https://github.com/JDRadatti/go-chess" slot="header-actions" aria-label="GitHub"><wa-icon name="external-link" family="solid"></wa-icon></a>
         </wa-card>
 
         <wa-card>
           <div slot="header"><strong>Simulated 8086 CPU</strong></div>
           <p>Implemented an 8086 CPU that supports decoding and executing 16-bit instructions (In progress).</p>
-          <a href="https://github.com/JDRadatti/sim_8086">GitHub</a>
+          <a href="https://github.com/JDRadatti/sim_8086" slot="header-actions" aria-label="GitHub"><wa-icon name="external-link" family="solid"></wa-icon></a>
         </wa-card>
       </section>
     </main>
