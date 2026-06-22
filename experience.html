@@ -16,6 +16,7 @@
     [slot="navigation-footer"]{flex-direction:row;justify-content:center;border-block-start:var(--wa-border-width-s) var(--wa-border-style) var(--wa-color-surface-border)}
     [slot="navigation-footer"] wa-icon{font-size:var(--wa-font-size-xl)}
     wa-page[view="desktop"] [slot*="navigation"]{border-inline-end:var(--wa-border-width-s) var(--wa-border-style) var(--wa-color-surface-border)}
+    [slot="header-actions"]{font-size:var(--wa-font-size-s)}
   </style>
 </head>
 <body>
@@ -46,49 +47,45 @@
     </nav>
 
     <main>
-      <section>
+      <section style="display:flex;flex-direction:column;gap:var(--wa-space-m)">
         <h2>Experience</h2>
 
-        <article>
-          <h3>Website Developer</h3>
-          <p>Deschutes Endodontics &amp; Deschutes Public Library Foundation</p>
-          <p><time datetime="2022-09">Sep 2022</time> – <time datetime="2024-11">Nov 2024</time></p>
+        <wa-card with-header-actions>
+          <div slot="header"><strong>Deschutes Endodontics &amp; Deschutes Public Library Foundation</strong> <em>Website Developer</em></div>
+          <p slot="header-actions"><time datetime="2022-11">Nov 2022</time> – <time datetime="2025-05">May 2025</time></p>
           <ul>
-            <li>Designed and developed a website for Deschutes Endodontics.</li>
-            <li>Designed and developed a website for the Deschutes Public Library Foundation.</li>
+            <li>Designed and developed a website for <a href="https://www.deschutesendo.com/">Deschutes Endodontics</a>.</li>
+            <li>Designed and developed a website for the <a href="https://dplfoundation.org/">Deschutes Public Library Foundation</a>.</li>
           </ul>
-        </article>
+        </wa-card>
 
-        <article>
-          <h3>Software Engineer</h3>
-          <p>Differentiated Therapeutics</p>
-          <p><time datetime="2022-09">Sep 2022</time> – <time datetime="2024-11">Nov 2024</time></p>
+        <wa-card with-header-actions>
+          <div slot="header"><strong>Differentiated Therapeutics</strong> <em>Software Engineer</em></div>
+          <p slot="header-actions"><time datetime="2022-09">Sep 2022</time> – <time datetime="2024-11">Nov 2024</time></p>
           <ul>
             <li>Architected and deployed a full-stack web application to centralize interaction with scientific datasets, enhancing global data accessibility and downstream analysis.</li>
             <li>Engineered an automated data auditing system that programmatically detected structural anomalies across core data files, guaranteeing strict data integrity for research pipelines.</li>
             <li>Developed a workflow automation framework for complex molecular simulations, slashing execution times by 90% while eliminating manual configuration errors.</li>
             <li>Collaborated with cross-functional biology teams to build a high-throughput data processing and visualization pipeline, reducing processing latency from 50 minutes to less than 1 minute.</li>
           </ul>
-        </article>
+        </wa-card>
 
-        <article>
-          <h3>Software Engineer Intern</h3>
-          <p>Draco Ova Holdings</p>
-          <p><time datetime="2021-05">May 2021</time> – <time datetime="2021-08">Aug 2021</time></p>
+        <wa-card with-header-actions>
+          <div slot="header"><strong>Draco Ova Holdings</strong> <em>Software Engineer Intern</em></div>
+          <p slot="header-actions"><time datetime="2021-05">May 2021</time> – <time datetime="2021-08">Aug 2021</time></p>
           <ul>
             <li>Architected and developed an automated, high-throughput data capture service, successfully ingesting and managing over 1 TB of production data.</li>
           </ul>
-        </article>
+        </wa-card>
 
-        <article>
-          <h3>Software Engineer Intern</h3>
-          <p>RockBot</p>
-          <p><time datetime="2020-05">May 2020</time> – <time datetime="2020-08">Aug 2020</time></p>
+        <wa-card with-header-actions>
+          <div slot="header"><strong>RockBot</strong> <em>Software Engineer Intern</em></div>
+          <p slot="header-actions"><time datetime="2020-05">May 2020</time> – <time datetime="2020-08">Aug 2020</time></p>
           <ul>
             <li>Engineered a compile-time/runtime type-safety solution for core API endpoints, eliminating input validation vulnerabilities across backend services.</li>
-            <li>Optimized backend codebase health by refactoring legacy modules and expanding test suite coverage to improve continuous integration reliability.</li>
+            <li>Optimized backend codebase health by refactoring legacy modules and expanding test suite coverage to improve continuous reliability.</li>
           </ul>
-        </article>
+        </wa-card>
       </section>
     </main>
   </wa-page>
