@@ -10,13 +10,14 @@
   <style>
     html,body{min-height:100%;padding:0;margin:0}
     wa-page:not(:defined){visibility:hidden}
-    [slot="navigation-header"]{border-block-end:var(--wa-border-width-s) var(--wa-border-style) var(--wa-color-surface-border)}
+    [slot="navigation-header"]{border-block-end:var(--wa-border-width-s) dashed var(--wa-color-surface-border)}
     [slot="navigation-header"] .wa-stack{width:100%}
     [slot="navigation-header"] wa-avatar{--size:6rem}
     wa-avatar::part(image){object-position:center 45%}
-    [slot="navigation-footer"]{flex-direction:row;justify-content:center;border-block-start:var(--wa-border-width-s) var(--wa-border-style) var(--wa-color-surface-border)}
+    [slot="navigation-footer"]{flex-direction:row;justify-content:center;border-block-start:var(--wa-border-width-s) dashed var(--wa-color-surface-border)}
     [slot="navigation-footer"] wa-icon{font-size:var(--wa-font-size-xl)}
-    wa-page[view="desktop"] [slot*="navigation"]{border-inline-end:var(--wa-border-width-s) var(--wa-border-style) var(--wa-color-surface-border)}
+    wa-page[view="desktop"] [slot*="navigation"]{border-inline-end:var(--wa-border-width-s) dashed var(--wa-color-surface-border)}
+    wa-card{border-style:dashed;box-shadow:none}
   </style>
 </head>
 <body>
