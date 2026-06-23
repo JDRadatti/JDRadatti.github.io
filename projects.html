@@ -13,6 +13,7 @@
     [slot="navigation-header"]{border-block-end:var(--wa-border-width-s) var(--wa-border-style) var(--wa-color-surface-border)}
     [slot="navigation-header"] .wa-stack{width:100%}
     [slot="navigation-header"] wa-avatar{--size:6rem}
+    wa-avatar::part(image){object-position:center 45%}
     [slot="navigation-footer"]{flex-direction:row;justify-content:center;border-block-start:var(--wa-border-width-s) var(--wa-border-style) var(--wa-color-surface-border)}
     [slot="navigation-footer"] wa-icon{font-size:var(--wa-font-size-xl)}
     wa-page[view="desktop"] [slot*="navigation"]{border-inline-end:var(--wa-border-width-s) var(--wa-border-style) var(--wa-color-surface-border)}
@@ -27,7 +28,7 @@
   <wa-page>
     <nav slot="navigation-header">
       <div class="wa-stack">
-        <wa-avatar image="" label="" shape="circle"></wa-avatar>
+        <wa-avatar image="assets/avatar.png" label="" shape="circle"></wa-avatar>
         <span class="wa-heading-m">Justin Radatti</span>
       </div>
     </nav>

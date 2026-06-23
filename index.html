@@ -13,6 +13,7 @@
     [slot="navigation-header"]{border-block-end:var(--wa-border-width-s) var(--wa-border-style) var(--wa-color-surface-border)}
     [slot="navigation-header"] .wa-stack{width:100%}
     [slot="navigation-header"] wa-avatar{--size:6rem}
+    wa-avatar::part(image){object-position:center 45%}
     [slot="navigation-footer"]{flex-direction:row;justify-content:center;border-block-start:var(--wa-border-width-s) var(--wa-border-style) var(--wa-color-surface-border)}
     [slot="navigation-footer"] wa-icon{font-size:var(--wa-font-size-xl)}
     wa-page[view="desktop"] [slot*="navigation"]{border-inline-end:var(--wa-border-width-s) var(--wa-border-style) var(--wa-color-surface-border)}
@@ -25,7 +26,7 @@
   <wa-page>
     <nav slot="navigation-header">
       <div class="wa-stack">
-        <wa-avatar image="" label="" shape="circle"></wa-avatar>
+        <wa-avatar image="assets/avatar.png" label="" shape="circle"></wa-avatar>
         <span class="wa-heading-m">Justin Radatti</span>
       </div>
     </nav>
@@ -70,8 +71,6 @@
     </main>
 
     <section slot="aside">
-      <h2>Technical Skills</h2>
-
       <section>
         <h3>Languages</h3>
         <div class="wa-flex" style="gap:var(--wa-space-s);flex-wrap:wrap">
@@ -80,7 +79,8 @@
           <wa-badge variant="brand">Python</wa-badge>
           <wa-badge variant="brand">Go</wa-badge>
           <wa-badge variant="brand">JavaScript</wa-badge>
-          <wa-badge variant="brand">HTML/CSS</wa-badge>
+          <wa-badge variant="brand">HTML</wa-badge>
+          <wa-badge variant="brand">CSS</wa-badge>
         </div>
       </section>
 
@@ -91,6 +91,7 @@
           <wa-badge variant="success">NGINX</wa-badge>
           <wa-badge variant="success">PyTorch</wa-badge>
           <wa-badge variant="success">AWS</wa-badge>
+          <wa-badge variant="success">Pandas</wa-badge>
         </div>
       </section>
 
@@ -100,7 +101,11 @@
           <wa-badge variant="info">Software Engineering</wa-badge>
           <wa-badge variant="info">Embedded Systems</wa-badge>
           <wa-badge variant="info">Computer Architecture</wa-badge>
-          <wa-badge variant="info">Compilers</wa-badge>
+          <wa-badge variant="info">Compiler Construction</wa-badge>
+          <wa-badge variant="info">Algorithms Design and Analysis</wa-badge>
+          <wa-badge variant="info">Programming Languages</wa-badge>
+          <wa-badge variant="info">Operating Systems</wa-badge>
+          <wa-badge variant="info">Data Structures</wa-badge>
         </div>
       </section>
     </section>
